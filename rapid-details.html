@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Advik Ayya Portfolio - Passio</title>
+  <title>Advik Ayya Portfolio - Rapid Effect</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -55,12 +55,12 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Portfolio Details</h2>
+          <h2 class="hero-title mb-4">Rapid Effect Internship</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
               <a href="index.html">Home</a>
             </li>
-            <li class="breadcrumb-item active">Portfolio Details</li>
+            <li class="breadcrumb-item active">Rapid Effect</li>
           </ol>
         </div>
       </div>
@@ -80,15 +80,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio-details-1.jpg" alt="">
+                  <img src="assets/img/rapid-2.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio-details-2.jpg" alt="">
+                  <img src="assets/img/rapid-3.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio-details-3.jpg" alt="">
+                  <img src="assets/img/rapid-4.png" alt="">
                 </div>
 
               </div>
@@ -98,15 +98,21 @@
 
           <div class="col-lg-4">
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>Building an OPC UA python client</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                In the summer of 2021, I worked with Rapid Effect, a company based in Singapore that deals with providing services for automation products. Specifically, I worked on creating a python client which would poll the value of nodes on a server and then log this information, and periodically send it to the cloud to be stored.
+              </p>
+              <p>
+                To test my client, I uploaded the code to a raspberry pi system, which would connect to a kepware server communicating using the OPC UA protocol. To add security to the client, I added certificates and authentication. The polled data was sent using an Azure API to the cloud, which I was able to test using the application 'Postman'. Finally, to make sure this client would would run on multiple different versions and operating systems, I was able to load and run the client on a docker image.
               </p>
             </div>
           </div>
 
         </div>
-
+        <div class="project-testimonial">
+            <p class="project-testimonial-header">Testimonial:</p>
+            <p>"His attitude to learn new things related to Edge & Cloud computing was outstanding. He  was instrumental in developing a code for integration of plant data via OPC UA to Azure  cloud and create and use docker images for deployment. His ability to work closely and  communicate with the other team members was excellent." - <span class="project-testimonial-speaker">Sujay Gudi, Director</span></p>
+        </div>
       </div>
     </section><!-- End Portfolio Details Section -->
 

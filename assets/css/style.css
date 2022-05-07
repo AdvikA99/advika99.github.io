@@ -940,6 +940,19 @@ a:hover {
     font-style: italic;
 }
 
+.project-testimonial {
+    margin-bottom: 40px;
+    padding: 0 200px;
+}
+
+.project-testimonial-header {
+    font-weight: bold;
+}
+
+.project-testimonial-speaker {
+    font-style: italic
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
