@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Advik Ayya Portfolio - Passio</title>
+  <title>Advik Ayya Portfolio - Flappy Bird Neural Network</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -55,12 +55,12 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Portfolio Details</h2>
+          <h2 class="hero-title mb-4">Flappy Bird Neural Network</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
               <a href="index.html">Home</a>
             </li>
-            <li class="breadcrumb-item active">Portfolio Details</li>
+            <li class="breadcrumb-item active">Flappy Bird Neural Network</li>
           </ol>
         </div>
       </div>
@@ -79,16 +79,8 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio-details-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio-details-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio-details-3.jpg" alt="">
+                <div>
+                  <img src="assets/img/flappy-nn-2.png" alt="">
                 </div>
 
               </div>
@@ -98,10 +90,14 @@
 
           <div class="col-lg-4">
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>A neural network trained using a genetic algorithm</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                In this imitation of the classic game 'Flappy Bird', a population of birds constantly try and survive for the longest time. Each bird controls itself individually using a neural network, using its position as well as the following pipe's position as input with the output value determining whether the bird should jump at any given frame. This game was created using Processing, an animation and GUI library built on top of Java. In the left, you can see the game running, while on the right, there is a representation of the bird in the current generation with the greatest fitness. Green lines indicate a positive weight while red lines indicate a negative weight. The thickness of the line indicates the strength of the weight.
               </p>
+              <p>
+                When a bird collides with either the boundary of the screen or a pipe, its 'brain' in the form of a neural network is added to a mating pool a number of times. The number of times the bird's neural network is added is proportional to the fitness of the bird, determined by how long it has survived. When all birds in the current generation have collided, a new population is generated where each bird's brain is a random mix of two neural networks selected from the mating pool. Therefore those with the highest fitness have a greater chance of influencing the next generation. To make sure the birds have a chance to improve, each weight in the generated neural network has a small chance to mutate, changing its value slightly.
+              </p>
+              <a class="project-link" href="https://openprocessing.org/sketch/1197047">Demo and code</a>
             </div>
           </div>
 
