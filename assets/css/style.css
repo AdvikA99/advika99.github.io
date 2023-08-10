@@ -684,6 +684,7 @@ a:hover {
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
+  margin-top: 250px;
 }
 @media (min-width: 768px) {
   .hero .hero-title {
@@ -832,6 +833,50 @@ a:hover {
 .counter-num .counter {
   font-size: 2rem;
   margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Certification
+--------------------------------------------------------------*/
+#certification-section {
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.certifications-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.certification-container {
+    display: flex;
+    max-width: 40%;
+    align-items:center;
+}
+
+.certification-icon {
+    width:100px;
+    height:100px;
+    margin-right:20px;
+}
+
+.certification-title, .certification-completion-date, .certification-desc, .certification-proof {
+    margin:10px;
+}
+
+.certification-title {
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.5rem;
+}
+
+.certification-desc {
+    
+}
+
+.certification-proof {
+    
 }
 
 /*--------------------------------------------------------------
