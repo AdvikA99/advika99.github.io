@@ -13,13 +13,13 @@ const projects : Project[] = [
     name: "React Daily Fact Calendar",
     description: "A calendar webapp built using ReactJS that shows a fact about an event that occured on the same date in the past. The user can add notes and reminders to each day, change between year, month, and week view, and favorite facts for later viewing. Makes use of Material UI theming to be able to switch between a light and dark mode.",
     screenshotUrls: ["calendar_0.png", "calendar_1.png", "calendar_2.png", "calendar_3.png", "calendar_4.png"],
-    demoLink: "calendar"
+    demoLink: "#/calendar"
   },
   {
     name: "Craigslist Redesign",
     description: "Utilizing React's versatility, I've recreated Craigslist original cluttered design into a clean, responsive, and user-friendly interface. This project showcases modern design principles, leveraging React's state management and dynamic rendering capabilities to provide a more intuitive and visually appealing platform.",
     screenshotUrls: ["craigslist_0.png", "craigslist_1.png", "craigslist_2.png"],
-    demoLink: "craigslist"
+    demoLink: "#/craigslist"
   }
 ];
 
