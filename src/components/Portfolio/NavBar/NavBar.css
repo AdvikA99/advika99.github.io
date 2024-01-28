@@ -1,0 +1,51 @@
+#navBar {
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 100%;
+    z-index: 100;
+    padding: 6px;
+    align-items: center;
+}
+
+#portfolioLogo {
+    height: 32px;
+    outline: 1px solid white;
+    border-radius: 6px;
+}
+
+.navLink {
+    position: relative;
+    margin: 0 16px;
+    cursor: pointer;
+    font-family: "Moon";
+    text-decoration: none;
+    color: white;
+}
+
+.navLink:last-child {
+    margin-right: 32px;
+}
+
+.navLink::after, .selected::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: white;
+    transition: ease-in 200ms;
+}
+
+.navLink::after {
+    width: 0;
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
+.selected::after {
+    width: 100%;
+}

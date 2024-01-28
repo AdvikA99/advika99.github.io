@@ -1,0 +1,57 @@
+#dateItemTooltipParent {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#dateItemTooltipChildrenContainer {
+    border-radius: 50%;
+}
+
+#dateItemTooltip {
+    position: absolute;
+    padding: 8px;
+    z-index: 1000;
+    border-radius: 16px;
+    width: 200px;
+}
+
+.dateItemTooltipTop {
+    bottom: calc(100% + 4px);
+}
+
+.dateItemTooltipBottom {
+    top: calc(100% + 6px);
+}
+
+.dateItemTooltipArrowTop {
+    bottom: calc(100% + 4px);
+}
+
+.dateItemTooltipArrowBottom {
+    top: 100%;
+}
+
+#dateItemTooltipArrow {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+    left: 50%;
+    z-index: 1000;
+}
+
+#dateItemTooltipHeader {
+    font-weight: bold;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 1.2em;
+}
+
+#dateItemTooltipAdditionalNotesMessage {
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: left;
+    margin-top: 4px;
+}

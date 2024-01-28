@@ -1,0 +1,12 @@
+.dateItemTooltipNoteItem {
+    display: flex;
+    margin-top: 4px;
+}
+
+.dateItemTooltipNotesTypeIcon {
+    margin-right: 8px;
+}
+
+.dateItemTooltipNotesText {
+    font-size: 0.9em;
+}

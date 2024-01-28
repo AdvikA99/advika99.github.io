@@ -1,0 +1,19 @@
+.yearItem {
+    --year-item-size: 36px;
+
+    min-width: var(--year-item-size);
+    min-height: var(--year-item-size);
+    max-width: var(--year-item-size);
+    max-height: var(--year-item-size);
+    margin: 4px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.yearItem:hover {
+    transform: scale(1.05);
+}

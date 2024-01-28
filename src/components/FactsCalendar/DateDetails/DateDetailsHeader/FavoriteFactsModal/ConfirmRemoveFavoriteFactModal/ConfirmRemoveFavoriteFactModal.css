@@ -1,0 +1,55 @@
+#confirmRemoveFavoriteFactModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(30, 30, 30);
+    transform: translate(-50%, -50%);
+    box-shadow: 24px;
+    border-radius: 16px;
+    color: white;
+    padding: 16px;
+    max-height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#confirmRemoveFavoriteFactMessage {
+    font-size: 1.2em;
+}
+
+#confirmRemoveFavoriteFactSubmessage {
+    font-style: italic;
+}
+
+#confirmRemoveFavoriteFactButtonsRow {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#confirmRemoveFavoriteFactButton, #cancelRemoveFavoriteFactButton {
+    width: 150px;
+    height: 40px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    transition-duration: 200ms;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#confirmRemoveFavoriteFactButton:hover, #cancelRemoveFavoriteFactButton:hover {
+    transform: scale(1.05);
+}
+
+#confirmRemoveFavoriteFactButton {
+    background-color: red;
+    color: white;
+}
+
+#cancelRemoveFavoriteFactButton {
+    background-color: gold;
+    color: rgb(30, 30, 30);
+}

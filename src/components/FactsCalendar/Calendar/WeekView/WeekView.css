@@ -1,0 +1,37 @@
+#weekViewSection {
+    display: flex;
+    flex-direction: column;
+}
+
+#weekSelectorRow {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+.weekSelectorButton {
+    background-color: transparent;
+    border: none;
+}
+
+.weekRow {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    height: 180px;
+}
+
+.weekRow:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.weekDayHeader {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: bold;
+    width: 20px;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    font-family: "BebasNeue";
+}

@@ -1,0 +1,29 @@
+.favoriteFactItem {
+    display: flex;
+    margin-top: 8px;
+}
+
+.favoriteFactText {
+    flex: 1;
+}
+
+.removeFavoriteFactButton {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    font-weight: bolder;
+    transition-duration: 200ms;
+    font-size: 0.65em;
+}
+
+.removeFavoriteFactButton:hover {
+    background-color: rgb(255, 95, 95   );
+}
+
+.favoriteFactItemYear {
+    font-weight: bold;
+}

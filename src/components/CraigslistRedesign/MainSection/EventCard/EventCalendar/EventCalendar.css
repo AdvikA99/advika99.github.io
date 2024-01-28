@@ -1,0 +1,56 @@
+#eventCalendar {
+    width: 250px;
+}
+
+#eventMonthSelectorRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.eventMonthSelector {
+    cursor: pointer;
+}
+
+.eventMonthSelector:hover {
+    color: blue;
+}
+
+#eventMonth {
+    text-align: center;
+}
+
+.calendarRow {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.dayHeader {
+    font-weight: bold;
+}
+
+.calendarDate {
+    flex: 1;
+    height: 100%;
+    margin: 0;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.calendarDate:hover {
+    outline: 1px solid currentColor;
+}
+
+.curDate {
+    outline: 1px solid blue !important;
+}
+
+.selectedDate {
+    background-color: blue;
+    color: white !important;
+}
+
+.notPartOfMonth {
+    color: rgba(0, 0, 0, 0.4);
+}

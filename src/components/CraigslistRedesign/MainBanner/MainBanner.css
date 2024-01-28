@@ -1,0 +1,62 @@
+#bannerSection {
+    display: flex;
+    height: 55vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#bannerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 60%;
+    filter: brightness(40%);
+}
+
+#bannerCenterContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    width: 50%;
+    max-width: 600px;
+}
+
+#bannerHeader {
+    font-size: 4em;
+    color: rgb(200, 140, 255);
+    height: 75px;
+}
+
+#bannerSubheader {
+    font-size: 2em;
+    color: white;
+    padding-left: 6px;
+}
+
+#bannerSearchBar {
+    background-color: white;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border: 2px solid rgb(40, 40, 40);
+}
+
+#bannerSearchBar:hover #searchIcon {
+    transform: scale(1.1);
+}
+
+#bannerSearchInput {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+#searchBarButton:hover {
+    background-color: rgb(200, 140, 255) !important;
+}

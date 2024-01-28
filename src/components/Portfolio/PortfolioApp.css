@@ -1,0 +1,4 @@
+#portfolioApp {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,61 @@
+#timeSelectorRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#timeSelectorButtonsContainer {
+    --border-width: 2px;
+    --border-radius: 8px;
+
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timeSelectorButtonsContainer > * {
+    flex-basis: 34%;
+    font-family: "BebasNeue";
+    font-size: 1.2em;
+    padding-top: 8px;
+}
+
+.timeSelectorButton {
+    height: 32px;
+}
+
+.timeSelectorButton:first-child {
+    border-style: solid;
+    border-width: var(--border-width);
+    border-right: 0;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.timeSelectorButton:nth-child(2) {
+    border-style: solid;
+    border-width: var(--border-width);
+    border-radius: 0;
+}
+
+.timeSelectorButton:last-child {
+    border-style: solid;
+    border-width: var(--border-width);
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.timeSelectorButton:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.selectedTimeScale {
+    font-weight: bold;
+}

@@ -1,0 +1,11 @@
+#footerBar {
+    display: flex;
+    background-color: black;
+    padding: 32px;
+    justify-content: center;
+}
+
+#footerCopyrightNotice {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+}

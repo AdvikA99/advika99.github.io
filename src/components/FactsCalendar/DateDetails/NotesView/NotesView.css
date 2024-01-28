@@ -1,0 +1,29 @@
+#notesSection {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+    padding:16px;
+    flex: 1;
+    max-height: 400px;
+    overflow-y: scroll;
+    /* Hides Scrollbar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+  
+#notesSection::-webkit-scrollbar {
+    display: none;
+}
+
+
+.notesHeader {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-family: "BebasNeue";
+    font-size: 1.6em;
+}
+
+.notesHeader:last-child {
+    margin-top: 20px;
+}

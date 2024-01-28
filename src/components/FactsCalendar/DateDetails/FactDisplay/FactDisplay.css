@@ -1,0 +1,39 @@
+#factContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#factDate {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+#fact {
+    font-size: 1.4em;
+    flex: 1;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 2.3em;
+}
+
+#factRow {
+    display: flex;
+    justify-content: center;
+}
+
+#factFavorite {
+    margin-right: 8px;
+}
+
+#factRefresh {
+    margin-left: 8px;
+}
+
+#factFavorite, #factRefresh {
+    cursor: pointer;
+}

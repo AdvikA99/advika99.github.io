@@ -1,0 +1,18 @@
+#timeDisplay {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 11em;
+    margin-top: 24px;
+    font-family: "Zyzol";
+}
+
+#dateDisplay {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.4em;
+    font-family: 'Times New Roman', Times, serif;
+}

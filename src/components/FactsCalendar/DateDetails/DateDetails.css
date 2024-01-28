@@ -1,0 +1,4 @@
+#detailsSection {
+    display: flex;
+    flex-direction: column;
+}

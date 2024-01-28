@@ -1,0 +1,53 @@
+.categoryCard {
+    min-width: 310px;
+    height: 320px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    margin: 24px 0;
+    padding: 16px;
+}
+
+.cardHeaderRow {
+    display: flex;
+    align-items: center;
+    color: purple;
+    border-bottom: 1px solid currentColor;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+}
+
+.cardHeader {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 8px;
+    padding-bottom: 2px;
+}
+
+.subcategoriesContainer {
+    display: flex;
+}
+
+.subcategoriesContainer > div {
+    width: 50%;
+}
+
+.subcategory {
+    font-size: 1em;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.subcategory:hover {
+    color: blue;
+}
+
+.viewAllSubcategoriesLink {
+    font-weight: bold;
+    font-size: 0.9em;
+    padding-top: 2px;
+    cursor: pointer;
+    color: purple;
+    font-style: italic;
+    text-decoration: underline;
+}

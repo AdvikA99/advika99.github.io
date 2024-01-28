@@ -1,0 +1,36 @@
+#footerBarCraigslist {
+    background-color: rgb(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+#footerColumnsRow {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    min-width: 800px;
+}
+
+.footerHeader, .footerLink {
+    font-size: 0.85em;
+}
+
+.footerHeader {
+    font-weight: bold;
+}
+
+.footerLink {
+    cursor: pointer;
+}
+
+.footerLink:hover {
+    color: blue;
+}
+
+#copyrightNote {
+    text-align: center;
+}

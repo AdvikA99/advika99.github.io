@@ -1,0 +1,53 @@
+#projects {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+    position: relative;
+}
+
+.projectCard {
+    height: 500px;
+    flex: 1;
+    margin-right: 64px;
+}
+
+.projectCard:last-child {
+    margin-right: 0;
+}
+
+.projectCard > div {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectHeader {
+    font-size: 2em;
+}
+
+.projectImagesDiv {
+    height: 180px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.projectImagesDiv:hover {
+    outline: 2px solid rgb(0, 100, 255);
+}
+
+.projectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.projectDescription {
+    margin-top: 16px;
+}
+
+.projectDemoButton {
+    height: 60px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 16px;
+}

@@ -1,0 +1,64 @@
+#favoriteFactsModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 200px;
+    min-height: 200px;
+    width: 800px;
+    height: 800px;
+    max-width: 80%;
+    transform: translate(-50%, -50%);
+    box-shadow: 24px;
+    border-radius: 16px;
+    padding: 16px;
+    max-height: 80%;
+    overflow-y: scroll;
+    /* Hides Scrollbar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#favoriteFactsModal::-webkit-scrollbar {
+  display: none;
+}
+
+#favoriteFactsModalHeaderRow {
+    display: flex;
+    align-items: center;
+}
+
+#favoriteFactsModalIcon {
+    margin-right: 8px;
+}
+
+#favoriteFactsModalTitle {
+    font-weight: bold;
+    color: rgb(100, 180, 255);
+    font-family: "BebasNeue";
+    font-size: 2em;
+}
+
+#favoriteFactsList {
+    margin-top: 16px;
+}
+
+.favoriteFactModalHeader {
+    font-size: 1.2em;
+    color: rgb(100, 180, 255);
+    font-weight: bold;
+    font-family: "BebasNeue";
+    font-size: 1.8em;
+}
+
+.favoriteFactModalSubheader {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 8px;
+    font-family: "BebasNeue";
+    font-size: 1.2em;
+}
+
+.favoriteFactModalMonthGroup {
+    margin-top: 16px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,13 @@
+#mainSection {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+#categoriesSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

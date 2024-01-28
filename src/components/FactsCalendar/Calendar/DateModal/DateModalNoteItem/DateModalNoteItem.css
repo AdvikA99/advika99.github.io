@@ -1,0 +1,39 @@
+.dateModalNoteItem {
+    display: flex;
+    margin-top: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+ .dateModalNotesTypeIcon {
+    margin-left: 8px;
+    margin-right: 8px;
+ }
+ 
+ .dateModalNotesDeleteButton {
+    width: 24px;
+    height: 24px;
+}
+
+.dateModalNotesText {
+    font-size: 1.2em;
+    flex: 1;
+}
+
+.dateModalNotesDeleteButton {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    font-weight: bolder;
+    transition-duration: 200ms;
+    font-size: 0.65em;
+}
+
+.dateModalNotesDeleteButton:hover {
+    background-color: rgb(255, 95, 95);
+}

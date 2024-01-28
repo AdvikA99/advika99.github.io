@@ -1,0 +1,39 @@
+#monthViewSection {
+    display: flex;
+    flex-direction: column;
+}
+
+#monthSelectorRow {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+#currentMonthText {
+    min-width: 200px;
+    text-align: center;
+    padding-top:12px;
+    font-weight: bold;
+    font-family: "BebasNeue";
+    font-size: 1.6em;
+}
+
+.monthSelectorButton {
+    background-color: transparent;
+    border: none;
+}
+
+.monthRow {
+    display: flex;
+}
+
+.monthRow > * {
+    flex: 1;
+    text-align: center;
+}
+
+.monthRowHeader {
+    font-weight: bold;
+    font-family: "BebasNeue";
+    font-size: 1.4em;
+}

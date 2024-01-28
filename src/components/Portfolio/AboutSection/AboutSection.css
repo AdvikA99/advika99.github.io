@@ -1,0 +1,104 @@
+#about {
+    padding: 64px;
+    display: flex;
+    padding-bottom: 0;
+}
+
+#aboutMeCard {
+    border: 1px solid darkgray;
+    height: 400px;
+    flex: 1;
+    margin-right: 64px;
+}
+
+#aboutMeCard > div {
+    padding: 32px;
+}
+
+#aboutHeader {
+    font-size: 3em;
+}
+
+#aboutMeContent {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    display: flex;
+}
+
+#aboutMeContent > div:first-child {
+    padding-right: 16px;
+    flex: 1;
+    border-right: 1px solid currentColor;
+}
+
+#aboutMeContent > div:last-child {
+    padding-left: 16px;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutMeText {
+    margin-bottom: 16px;
+}
+
+.accomplishmentsDiv {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.accomplishmentsDiv > p {
+    margin-left: 16px;
+}
+
+#skillsSlotsCard {
+    border: 1px solid rgb(80, 80, 80);
+    height: 400px;
+    width: 300px;
+}
+
+#skillsSlotsCard > div {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+}
+
+#skillsTextDiv {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#skillsTextPreamble {
+    font-family: "Cintaly";
+    font-size: 2em;
+}
+
+#skillsTextMask {
+    margin-top: 32px;
+    position: relative;
+    height: 2.8em;
+    width: 100%;
+    overflow: hidden;
+}
+
+#skillsTextMask > div {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 2.4em;
+}
+
+#resumeDownloadButton {
+    margin-top: 32px;
+    height: 60px;
+}
+
+#resumeDownloadButton > button {
+    padding: 16px;
+    justify-content: space-around;
+}

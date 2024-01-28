@@ -1,0 +1,101 @@
+#headerBar {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+#headerLeft, #headerRight {
+    display: flex;
+    align-items: center;
+}
+
+#headerLeft {
+    flex: 1;
+}
+
+#logoIcon {
+    font-size: 1.8em;
+    color: purple;
+    margin: 0 8px;
+}
+
+#logoText {
+    height: 24px;
+    padding-top: 4px;
+}
+
+#locationSelectDiv {
+    position: relative;
+    height: 32px;
+    right: 0;
+    width: 200px;
+}
+
+.headerSelectIcon {
+    color: rgb(150, 50, 255);
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#locationSelection, #languageSelection {
+    padding-left: 28px;
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 32px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgb(150, 50, 255);
+}
+
+#locationSelection:focus, #languageSelection:focus {
+    outline: none;
+}
+
+#locationSelection::-webkit-scrollbar {
+    width: 8px;
+}
+  
+#locationSelection::-webkit-scrollbar-track {
+    border: 0;
+    background-color: rgb(250, 240, 250);
+}
+  
+#locationSelection::-webkit-scrollbar-thumb {
+    background-color: rgb(150, 50, 255);
+    border: 0;
+    border-radius: 4px;
+}
+
+#locationSelection option, #languageSelection option {
+    background-color: white;
+}
+
+#locationSelection option:checked, #languageSelection option:checked {
+    font-weight: bold;
+}
+
+#languageSelectDiv {
+    position: relative;
+    height: 32px;
+    right: 0;
+    width: 120px;
+    margin-left: 12px;
+}
+
+#postButton, #signInButton {
+    margin-left: 12px;
+}
+
+#signInButton {
+    margin-right: 16px;
+}
+
+#signInButton:hover, #postButton:hover {
+    background-color: rgb(150, 50, 255);
+    color: white;
+}

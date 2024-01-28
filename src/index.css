@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Moon";
+  src: local("Moon"),
+    url("./fonts/Moon2.0-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "OstrichSans";
+  src: local("OstrichSans"),
+    url("./fonts/OstrichsansMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Cintaly";
+  src: local("Cintaly"),
+    url("./fonts/Cintaly.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Zyzol";
+  src: local("ZyzolShadow"),
+    url("./fonts/ZyzolShadow.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: local("BebasNeue"),
+    url("./fonts/BebasNeue-Regular.otf") format("opentype");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.flexGrow {
+  flex: 1;
+}
+
+.header {
+  font-family: "Moon";
+  position: relative;
+  width: fit-content;
+  margin-bottom: 24px;
+}
+
+.cutoutHole {
+  position: relative;
+  background-color: rgb(80, 80, 80);
+  display: flex;
+}
+
+.cutoutPiece {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  background-color: white;
+  width: calc(100% - 62px);
+  height: calc(100% - 62px);
+  transition: ease-out 200ms;
+  border: 1px solid rgb(80, 80, 80);
+  color: rgb(80, 80, 80);
+}
+
+.cutoutPiece:hover {
+  top: -12px;
+  left: -12px;
+}
+
+.cutoutPiece .header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 3px;
+  background-color: rgb(80, 80, 80);
+  transition: ease-in 200ms;
+  width: 0;
+}
+
+.cutoutPiece:hover .header::after {
+  width: 120%;
+}
+
+.cutoutHoleButton {
+  position: relative;
+  background-color: rgb(80, 80, 80);
+  display: flex;
+}
+
+.cutoutPieceButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: ease-out 200ms;
+  border: 1px solid rgb(80, 80, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: rgb(80, 80, 80);
+}
+
+.cutoutPieceButton:hover {
+  top: -8px;
+  left: -8px;
+  color: white;
+}
+
+.cutoutPieceButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 100, 255);
+  width: 0;
+  height: 100%;
+  transition: ease-in-out 200ms;
+}
+
+.cutoutPieceButton:hover::before {
+  width: 100%;
+}
+
+.cutoutPieceButton > * {
+  z-index: 2;
+}
