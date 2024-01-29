@@ -41,7 +41,7 @@ function NavBar() {
   const [selectedSectionInd, setSelectedSectionInd] = useState(0);
   const [isNavMenuOpen, setNavMenuOpen] = useState(false);
 
-  const showFullNavBar = useMediaQuery({ query: '(min-width: 1200px)' })
+  const showFullNavBar = useMediaQuery({ query: '(min-width: 640px)' })
 
   useEffect(() => {
     sections.forEach((section) => {

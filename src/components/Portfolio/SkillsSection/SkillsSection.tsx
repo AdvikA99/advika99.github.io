@@ -127,8 +127,8 @@ function SkillsSection() {
                 <div>
                   <p id="skillsDescriptionHeader">{curHoverSkill.name}</p>
                   {
-                    curHoverSkill.description.split("\n").map((line) => (
-                      <p className="skillsDescriptionLine">{line}</p>
+                    curHoverSkill.description.split("\n").map((line, index) => (
+                      <p key={index} className="skillsDescriptionLine">{line}</p>
                     ))
                   }
                 </div>
