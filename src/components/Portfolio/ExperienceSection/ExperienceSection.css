@@ -1,16 +1,16 @@
 #experience {
     display: flex;
     justify-content: space-between;
-    padding: 64px;
+    padding: var(--section-padding);
     padding-bottom: 0;
     position: relative;
+    flex-direction: column;
 }
 
 .experienceCard {
     border: 1px solid darkgray;
-    height: 550px;
+    min-height: 600px;
     flex: 1;
-    margin-right: 64px;
 }
 
 .experienceCard:last-child {
@@ -18,7 +18,7 @@
 }
 
 .experienceCard > div {
-    padding: 32px;
+    padding: var(--card-padding);
 }
 
 .experienceHeader {
@@ -43,7 +43,7 @@
 }
 
 .experienceTitle {
-    font-size: 1.8em;
+    font-size: var(--header-medium-font-size);
     font-family: "Moon";
 }
 

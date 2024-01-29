@@ -1,47 +1,49 @@
 #skills {
-    padding: 64px;
+    padding: var(--section-padding);
     padding-bottom: 0;
     display: flex;
 }
 
 #skillsCard {
     border: 1px solid darkgray;
-    height: 540px;
+    height: 1240px;
     flex: 1;
 }
 
 #skillsCard > div {
-    padding: 32px;
     display: flex;
     flex-direction: column;
 }
 
 #skillsHeader {
-    font-size: 3em;
+    font-size: var(--header-large-font-size);
 }
 
 #skillsCardContent {
     display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
 #certifcateSection {
     display: flex;
     flex-direction: column;
-    border-right: 1px solid rgb(80, 80, 80);
+    border-bottom: 1px solid rgb(80, 80, 80);
     flex-basis: 33%;
     justify-content: space-between;
-    padding-right: 32px;
 }
 
 .certificateDiv {
     display: flex;
     flex-direction: column;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgb(80, 80, 80);
 }
 
-.certificateDiv:first-child {
-    padding-bottom: 16px;
-    border-bottom: 1px solid rgb(80, 80, 80);
+.certificateDiv:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .certificateHeaderRow {
@@ -50,33 +52,44 @@
     margin-bottom: 16px;
 }
 
+.certificateHeaderRow > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .certificateIcon {
-    margin-right: 12px;
-    font-size: 2.5rem !important;
+    margin-right: 8px;
+    font-size: 1.5rem !important;
 }
 
 .certificateHeader {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-family: "Moon";
 }
 
+.certificateSubheaderDiv {
+    font-size: 0.85em;
+    display: flex;
+}
+
 .certificateSubheader {
-    font-size: 0.9em;
+    flex: 1;
 }
 
 .certificateDate {
     font-style: italic;
-    font-size: 0.9em;
 }
 
 .certificateLinkRow {
     margin-top: 16px;
     display: flex;
-    align-items: end;
+    align-items: center;
 }
 
 .certificateLinkIcon {
     margin-right: 8px;
+    font-size: 0.9em !important;
 }
 
 .certificateLink {
@@ -93,12 +106,12 @@
 #skillsChipSection {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 32px;
-    width: 20%;
     flex: 1;
     transition: ease-in 200ms;
-    align-items: flex-start;
+    align-content: flex-start;
     height: min-content;
+    justify-content: start;
+    margin: 16px 0;
 }
 
 .skillChip {
@@ -108,7 +121,7 @@
     border-radius: 16px;
     cursor: pointer;
     transition: ease-in 200ms;
-    margin: 4px 8px;
+    margin: 4px 4px;
 }
 
 .activeSkillChip {
@@ -117,9 +130,8 @@
 }
 
 #skillsDescriptionSection {
-    padding: 0 32px;
     flex: 1;
-    border-left: 1px solid rgb(80, 80, 80);
+    border-top: 1px solid rgb(80, 80, 80);
     font-size: 1.15em;
     display: flex;
     justify-content: center;
@@ -147,6 +159,6 @@
 #skillsDescriptionHoverPrompt {
     text-align: center;
     font-family: "OstrichSans";
-    font-size: 2em;
+    font-size: var(--header-medium-font-size);
     font-style: italic;
 }

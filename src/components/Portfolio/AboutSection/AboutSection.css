@@ -1,5 +1,5 @@
 #about {
-    padding: 64px;
+    padding: var(--section-padding);
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
@@ -9,18 +9,17 @@
     display: flex;
     border: 1px solid darkgray;
     flex: 1;
-    margin-bottom: 64px;
+    margin-bottom: 0px;
     min-height: 600px;
 }
 
 #aboutMeCard > div {
-    padding: 32px;
     display: flex;
     flex-direction: column;
 }
 
 #aboutHeader {
-    font-size: 3em;
+    font-size: var(--header-large-font-size);
 }
 
 #aboutMeContent {
@@ -122,7 +121,7 @@
 
 #skillsSlotsCard > div {
     display: flex;
-    padding: 32px;
+    padding: var(--card-padding);
     flex-direction: column;
     justify-content: center;
     align-items: center;

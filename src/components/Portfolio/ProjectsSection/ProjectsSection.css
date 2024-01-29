@@ -1,14 +1,14 @@
 #projects {
     display: flex;
     justify-content: space-between;
-    padding: 64px;
+    padding: var(--section-padding);
     position: relative;
+    flex-direction: column;
 }
 
 .projectCard {
-    height: 500px;
+    min-height: 540px;
     flex: 1;
-    margin-right: 64px;
 }
 
 .projectCard:last-child {
@@ -16,13 +16,13 @@
 }
 
 .projectCard > div {
-    padding: 32px;
+    padding: var(--card-padding);
     display: flex;
     flex-direction: column;
 }
 
 .projectHeader {
-    font-size: 2em;
+    font-size: var(--header-medium-font-size);
 }
 
 .projectImagesDiv {

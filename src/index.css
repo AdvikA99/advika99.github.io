@@ -9,6 +9,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --section-padding: 0px;
+  --between-section-margin: 0px;
+
+  --card-padding: 16px;
+
+  --header-large-font-size: 2em;
+  --header-medium-font-size: 1.5em;
+}
+
+@media only screen and (min-width: 740px) {
+  body {
+    --section-padding: 32px;
+    --between-section-margin: 32px;
+
+    --card-padding: 32px;
+
+    --header-large-font-size: 3em;
+    --header-medium-font-size: 2em;
+  }
 }
 
 @font-face {
@@ -62,7 +82,7 @@ button {
   font-family: "Moon";
   position: relative;
   width: fit-content;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .cutoutHole {
@@ -76,16 +96,17 @@ button {
   top: -1px;
   left: -1px;
   background-color: white;
-  width: calc(100% - 62px);
-  height: calc(100% - 62px);
+  width: calc(100% - 2 * var(--card-padding));
+  height: calc(100% - 2 * var(--card-padding));
+  padding: var(--card-padding);
   transition: ease-out 200ms;
   border: 1px solid rgb(80, 80, 80);
   color: rgb(80, 80, 80);
 }
 
 .cutoutPiece:hover {
-  top: -12px;
-  left: -12px;
+  top: -1px;
+  left: -1px;
 }
 
 .cutoutPiece .header::after {

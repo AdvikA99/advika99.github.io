@@ -68,6 +68,30 @@ const skills = [
   },
 ];
 
+interface Certificate {
+  name: string,
+  source: string,
+  date: string,
+  description: string,
+  proofLink: string,
+}
+
+const certificates : Certificate[] = [
+  {
+    name: "Meta Android Development",
+    source: "Coursera Certificate",
+    date: "May 2023",
+    description: "Learned the full development life cycle for an android app, including designing using figma, developing the app using React, and how to publish an app on the Google play Store",
+    proofLink: "https://www.coursera.org/account/accomplishments/professional-cert/X9XVGHWDA3YR"
+  },
+  {
+    name: "IBM Applied AI",
+    source: "Coursera Certificate",
+    date: "July 2023",
+    description: "Grasped a foundational understanding of AI systems, chat bots, and virtual assistants, with a focus on IBM's Watson and AI Services",
+    proofLink: "https://www.coursera.org/account/accomplishments/professional-cert/ZEDH929VYWLP"
+  }
+];
 
 function SkillsSection() {
   const [curHoverSkill, setCurHoverSkill] = useState<Skill | null>(null);
@@ -77,38 +101,30 @@ function SkillsSection() {
       <div id="skillsCard" className="cutoutHole">
         <div className="cutoutPiece">
           <p id="skillsHeader" className="header">My Skills</p>
+
           <div id="skillsCardContent">
             <div id="certifcateSection">
-              <div className="certificateDiv">
-                <div className="certificateHeaderRow">
-                  <PhoneAndroidIcon className="certificateIcon"/>
-                  <div>
-                    <p className="certificateHeader">Meta Android Development</p>
-                    <p className="certificateSubheader">Coursera Certificate</p>
-                    <p className="certificateDate">May 2023</p>
+              {
+                certificates.map((certificate, index) =>
+                  <div key={index} className="certificateDiv">
+                    <div className="certificateHeaderRow">
+                      <PhoneAndroidIcon className="certificateIcon"/>
+                      <div>
+                        <p className="certificateHeader">{certificate.name}</p>
+                        <div className="certificateSubheaderDiv">
+                          <p className="certificateSubheader">{certificate.source}</p>
+                          <p className="certificateDate">{certificate.date}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p>{certificate.description}</p>
+                    <div className="certificateLinkRow">
+                      <VerifiedIcon className="certificateLinkIcon"/>
+                      <a href={certificate.proofLink} className="certificateLink">View Certificate</a>
+                    </div>
                   </div>
-                </div>
-                <p>Learned the full development life cycle for an android app, including designing using figma, developing the app using React, and how to publish an app on the Google play Store</p>
-                <div className="certificateLinkRow">
-                  <VerifiedIcon className="certificateLinkIcon"/>
-                  <a href="https://www.coursera.org/account/accomplishments/professional-cert/X9XVGHWDA3YR" className="certificateLink">View Certificate</a>
-                </div>
-              </div>
-              <div className="certificateDiv">
-                <div className="certificateHeaderRow">
-                  <AssistantIcon className="certificateIcon"/>
-                  <div>
-                    <p className="certificateHeader">IBM Applied AI</p>
-                    <p className="certificateSubheader">Coursera Certificate</p>
-                    <p className="certificateDate">July 2023</p>
-                  </div>
-                </div>
-                <p>Grasped a foundational understanding of AI systems, chat bots, and virtual assistants, with a focus on IBM's Watson and AI Services</p>
-                <div className="certificateLinkRow">
-                  <VerifiedIcon className="certificateLinkIcon"/>
-                  <a href="https://www.coursera.org/account/accomplishments/professional-cert/ZEDH929VYWLP" className="certificateLink">View Certificate</a>
-                </div>
-              </div>
+                )
+              }
             </div>
 
             <div id="skillsChipSection">

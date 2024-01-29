@@ -49,11 +49,11 @@
 }
 
 #heroTitle {
-    font-size: 3em;
+    font-size: var(--header-large-font-size);
 }
 
 #heroSubtitle {
-    font-size: 1.5em;
+    font-size: var(--header-medium-font-size);
 }
 
 @media only screen and (min-width: 640px) {

@@ -80,7 +80,8 @@ function NavBar() {
 
   const handleMouseDown = (event : any) => {
     // If clicked on navMenuItem, let it handle closing menu
-    if (!event.target.classList.contains("navMenuItem")) {
+    const targetClasses = event.target.classList;
+    if (!targetClasses.contains("navMenuItem") && !targetClasses.contains("navMenuIcon") && event.target.tagName !== "path") {
       setNavMenuOpen(false);
     }
   }
@@ -117,10 +118,14 @@ function NavBar() {
 
       {!showFullNavBar && (
         <div>
-          <MenuIcon id="navMenuIcon" onClick={handleOpenNavMenu}/>
-          {isNavMenuOpen && sections.map((section, index) => (
-            <a key={index} className="navMenuItem" style={{bottom: -(index * 32 + 20) + "px"}} onClick={() => handleNavMenuClick(section.idName)}>{section.navName}</a>
-          ))}
+          <MenuIcon className="navMenuIcon" onClick={handleOpenNavMenu}/>
+          {isNavMenuOpen &&
+            <div id="navMenu">
+              {sections.map((section, index) => (
+                <a key={index} className="navMenuItem" style={{bottom: -(index * 32 + 20) + "px"}} onClick={() => handleNavMenuClick(section.idName)}>{section.navName}</a>
+              ))}
+            </div>
+          }
         </div>
       )}
     </div>
