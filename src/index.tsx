@@ -4,10 +4,10 @@ import './index.css';
 import PortfolioApp from './components/Portfolio/PortfolioApp';
 import CalendarApp from './components/FactsCalendar/CalendarApp';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CraigslistApp from './components/CraigslistRedesign/CraigslistApp';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <PortfolioApp/>,

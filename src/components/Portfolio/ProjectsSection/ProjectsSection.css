@@ -50,4 +50,9 @@
     width: 200px;
     margin: 0 auto;
     margin-top: 16px;
+    display: flex;
+}
+
+.projectDemoLink {
+    text-decoration: none;
 }

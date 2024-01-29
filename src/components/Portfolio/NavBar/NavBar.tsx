@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './NavBar.css';
+import { useMediaQuery } from 'react-responsive';
+import MenuIcon from '@mui/icons-material/Menu';
 
 interface Section {
   navName: string,
@@ -8,6 +10,11 @@ interface Section {
 }
 
 const sections : Section[] = [
+  {
+    navName: "HOME",
+    idName: "",
+    element: null
+  },
   {
     navName: "ABOUT",
     idName: "about",
@@ -31,24 +38,35 @@ const sections : Section[] = [
 ];
 
 function NavBar() {
-  const [selectedSectionInd, setSelectedSectionInd] = useState(-1);
+  const [selectedSectionInd, setSelectedSectionInd] = useState(0);
+  const [isNavMenuOpen, setNavMenuOpen] = useState(false);
+
+  const showFullNavBar = useMediaQuery({ query: '(min-width: 1200px)' })
 
   useEffect(() => {
     sections.forEach((section) => {
       section.element = document.getElementById(section.idName) as HTMLDivElement;
     }); 
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("mousedown", handleMouseDown)
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("mousedown", handleMouseDown);
     }
   }, []);
 
+  useEffect(() => {
+    setNavMenuOpen(false);
+  }, [showFullNavBar])
+
   const handleScroll = (event: any) => {
     const curYPos = window.scrollY + 200;
-    var newSelectedSectionInd = -1;
+    var newSelectedSectionInd = 0;
 
     for (let i = 0; i < sections.length; i++) {
+      if (!sections[i].element) continue;
+
       const sectionDiv = sections[i].element;
       if (!sectionDiv) continue;
       if (curYPos >= sectionDiv.offsetTop && curYPos <= (sectionDiv.offsetTop + sectionDiv.offsetHeight)) {
@@ -60,24 +78,51 @@ function NavBar() {
     setSelectedSectionInd(newSelectedSectionInd);
   }
 
+  const handleMouseDown = (event : any) => {
+    // If clicked on navMenuItem, let it handle closing menu
+    if (!event.target.classList.contains("navMenuItem")) {
+      setNavMenuOpen(false);
+    }
+  }
+
+  const handleOpenNavMenu = () => {
+    setNavMenuOpen(!isNavMenuOpen);
+  }
+
+  const handleNavMenuClick = (sectionId : string) => {
+    window.location.href = "#" + sectionId;
+    setNavMenuOpen(false);
+  }
+
   return (
     <div id="navBar">
       <div className="flexGrow">
         <img id="portfolioLogo" src="advikLogo.png"/>
       </div>
-      <div>
-        <a className={"navLink" + (selectedSectionInd === -1 ? " selected" : "")} href="#">HOME</a>
-        {
-          sections.map((section, index) => (
-            <a 
-              key={index} 
-              className={"navLink" + (selectedSectionInd === index ? " selected" : "")}
-              href={"#" + section.idName}>
-                {section.navName}
-            </a>
-          ))
-        }
-      </div>
+
+      {showFullNavBar && (
+        <div>
+          {
+            sections.map((section, index) => (
+              <a 
+                key={index} 
+                className={"navLink" + (selectedSectionInd === index ? " selected" : "")}
+                href={"#" + section.idName}>
+                  {section.navName}
+              </a>
+            ))
+          }
+        </div>
+      )}
+
+      {!showFullNavBar && (
+        <div>
+          <MenuIcon id="navMenuIcon" onClick={handleOpenNavMenu}/>
+          {isNavMenuOpen && sections.map((section, index) => (
+            <a key={index} className="navMenuItem" style={{bottom: -(index * 32 + 20) + "px"}} onClick={() => handleNavMenuClick(section.idName)}>{section.navName}</a>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

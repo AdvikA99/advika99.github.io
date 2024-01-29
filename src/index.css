@@ -132,6 +132,7 @@ button {
 
 .cutoutPieceButton::before {
   content: "";
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
