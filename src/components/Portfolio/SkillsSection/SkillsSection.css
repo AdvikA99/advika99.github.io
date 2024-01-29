@@ -6,7 +6,7 @@
 
 #skillsCard {
     border: 1px solid darkgray;
-    height: 1240px;
+    min-height: 1110px;
     flex: 1;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .certificateHeader {
-    font-size: 1.2em;
+    font-size: var(--header-medium-font-size);
     font-family: "Moon";
 }
 
@@ -94,7 +94,7 @@
 
 .certificateLink {
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: var(--content-medium-font-size);
     font-style: italic;
     color: rgb(80, 80, 80);
 }
@@ -132,7 +132,7 @@
 #skillsDescriptionSection {
     flex: 1;
     border-top: 1px solid rgb(80, 80, 80);
-    font-size: 1.15em;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +145,7 @@
 #skillsDescriptionHeader {
     font-family: "Moon";
     font-size: 1.4em;
-    margin-bottom: 16px;
+    margin: 8px 0;
 }
 
 .skillsDescriptionLine {
@@ -161,4 +161,54 @@
     font-family: "OstrichSans";
     font-size: var(--header-medium-font-size);
     font-style: italic;
+}
+
+@media only screen and (min-width: 301px) {
+    #skillsCard {
+        min-height: 1080px;
+    }
+}
+
+@media only screen and (min-width: 322px) {
+    #skillsCard {
+        min-height: 1000px;
+    }
+}
+
+@media only screen and (min-width: 358px) {
+    #skillsCard {
+        min-height: 950px;
+    }
+}
+
+@media only screen and (min-width: 369px) {
+    #skillsCard {
+        min-height: 890px;
+    }
+}
+
+@media only screen and (min-width: 442px) {
+    #skillsCard {
+        min-height: 820px;
+    }
+}
+
+@media only screen and (min-width: 515px) {
+    #skillsCard {
+        min-height: 740px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #skillsCard {
+        min-height: 780px;
+    }
+
+    .certificateIcon {
+        font-size: 2.25rem !important;
+    }
+
+    .certificateLinkIcon {
+        font-size: 1.2rem !important;
+    }
 }

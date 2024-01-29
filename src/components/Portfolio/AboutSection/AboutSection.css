@@ -23,7 +23,7 @@
 }
 
 #aboutMeContent {
-    font-size: 1em;
+    font-size: var(--content-large-font-size);
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -55,9 +55,22 @@
     margin-left: 16px;
 }
 
-@media only screen and (min-width: 600px) {
-    #aboutMeContent {
-        font-size: 1.2em;
+
+@media only screen and (min-width: 320px) {
+    #aboutMeCard {
+        min-height: 520px;
+    }
+}
+
+@media only screen and (min-width: 441px) {
+    #aboutMeCard {
+        min-height: 480px;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    #aboutMeCard {
+        margin-bottom: var(--between-section-margin);
     }
 }
 

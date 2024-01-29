@@ -12,11 +12,21 @@ body {
 
   --section-padding: 0px;
   --between-section-margin: 0px;
-
   --card-padding: 16px;
 
   --header-large-font-size: 2em;
   --header-medium-font-size: 1.5em;
+  --content-large-font-size: 1em;
+  --content-medium-font-size: 0.9em;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    --header-large-font-size: 3em;
+    --header-medium-font-size: 2em;
+    --content-large-font-size: 1.2em;
+    --content-medium-font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: 740px) {
@@ -25,9 +35,14 @@ body {
     --between-section-margin: 32px;
 
     --card-padding: 32px;
+  }
+}
 
-    --header-large-font-size: 3em;
-    --header-medium-font-size: 2em;
+
+@media only screen and (min-width: 840px) {
+  body {
+    --section-padding: 64px;
+    --between-section-margin: 64px;
   }
 }
 

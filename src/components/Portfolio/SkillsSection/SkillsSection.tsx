@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { ReactElement, useEffect, useRef, useState } from 'react';
 import './SkillsSection.css';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import AssistantIcon from '@mui/icons-material/Assistant';
@@ -71,6 +71,7 @@ const skills = [
 interface Certificate {
   name: string,
   source: string,
+  iconType: number,
   date: string,
   description: string,
   proofLink: string,
@@ -80,6 +81,7 @@ const certificates : Certificate[] = [
   {
     name: "Meta Android Development",
     source: "Coursera Certificate",
+    iconType: 0,
     date: "May 2023",
     description: "Learned the full development life cycle for an android app, including designing using figma, developing the app using React, and how to publish an app on the Google play Store",
     proofLink: "https://www.coursera.org/account/accomplishments/professional-cert/X9XVGHWDA3YR"
@@ -87,6 +89,7 @@ const certificates : Certificate[] = [
   {
     name: "IBM Applied AI",
     source: "Coursera Certificate",
+    iconType: 1,
     date: "July 2023",
     description: "Grasped a foundational understanding of AI systems, chat bots, and virtual assistants, with a focus on IBM's Watson and AI Services",
     proofLink: "https://www.coursera.org/account/accomplishments/professional-cert/ZEDH929VYWLP"
@@ -108,7 +111,8 @@ function SkillsSection() {
                 certificates.map((certificate, index) =>
                   <div key={index} className="certificateDiv">
                     <div className="certificateHeaderRow">
-                      <PhoneAndroidIcon className="certificateIcon"/>
+                    {certificate.iconType === 0 && <PhoneAndroidIcon className="certificateIcon"/>}
+                    {certificate.iconType === 1 && <AssistantIcon className="certificateIcon"/>}
                       <div>
                         <p className="certificateHeader">{certificate.name}</p>
                         <div className="certificateSubheaderDiv">
@@ -117,7 +121,7 @@ function SkillsSection() {
                         </div>
                       </div>
                     </div>
-                    <p>{certificate.description}</p>
+                    <p className="certificateDescription">{certificate.description}</p>
                     <div className="certificateLinkRow">
                       <VerifiedIcon className="certificateLinkIcon"/>
                       <a href={certificate.proofLink} className="certificateLink">View Certificate</a>

@@ -43,6 +43,7 @@
 
 .projectDescription {
     margin-top: 16px;
+    flex: 1;
 }
 
 .projectDemoButton {
@@ -55,4 +56,17 @@
 
 .projectDemoLink {
     text-decoration: none;
+}
+
+@media only screen and (min-width: 345px) {
+    .projectCard {
+        min-height: 500px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+    .projectImagesDiv {
+        min-height: 240px;
+    }
 }
