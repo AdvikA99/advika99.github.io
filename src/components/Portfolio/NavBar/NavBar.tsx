@@ -98,7 +98,7 @@ function NavBar() {
   return (
     <div id="navBar">
       <div className="flexGrow">
-        <img id="portfolioLogo" src="advikLogo.png"/>
+        <img id="portfolioLogo" src="advikLogo.png" onClick={() => handleNavMenuClick("")}/>
       </div>
 
       {showFullNavBar && (

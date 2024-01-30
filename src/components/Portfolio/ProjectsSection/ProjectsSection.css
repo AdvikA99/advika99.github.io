@@ -29,6 +29,7 @@
     height: 180px;
     background-color: black;
     cursor: pointer;
+    outline: 1px solid black;
 }
 
 .projectImagesDiv:hover {
@@ -64,9 +65,26 @@
     }
 }
 
-
 @media only screen and (min-width: 480px) {
     .projectImagesDiv {
         min-height: 240px;
     }
 }
+
+@media only screen and (min-width: 1080px) {
+    #projects {
+        flex-direction: row;
+    }
+
+    .projectImagesDiv {
+        min-height: 180px;
+    }
+}
+
+@media only screen and (min-width: 1180px) {
+    .projectCard {
+        margin-right: var(--between-section-margin);
+    }
+}
+
+

@@ -82,7 +82,7 @@ function AboutSection() {
           <div id="resumeDownloadButton" className="cutoutHoleButton">
             <button className="cutoutPieceButton">
               <DownloadIcon/>
-              <p>DOWNLOAD RESUME</p>
+              <a href="AdvikAyyaResume.pdf">DOWNLOAD RESUME</a>
             </button>
           </div>
 

@@ -30,7 +30,6 @@
     flex-direction: column;
     border-bottom: 1px solid rgb(80, 80, 80);
     flex-basis: 33%;
-    justify-content: space-between;
 }
 
 .certificateDiv {
@@ -211,4 +210,42 @@
     .certificateLinkIcon {
         font-size: 1.2rem !important;
     }
+}
+
+@media only screen and (min-width: 1030px) {
+    #skillsCard {
+        min-height: 586px;
+    }
+        
+    #skillsCardContent {
+        flex-direction: row;
+    }
+
+    #certifcateSection {
+        border-bottom: none;
+        border-right: 1px solid darkgray;
+        padding-right: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+    }
+
+    #skillsDescriptionSection {
+        border-top: 0;
+        border-left: 1px solid darkgray;
+        padding-left: 16px;
+        margin-bottom: 16px;
+    }
+
+    #skillsDescriptionHeader {
+        margin-top: 0;
+    }
+
+}
+
+
+@media only screen and (min-width: 1180px) {
+    #skillsCard {
+        min-height: 546px;
+    }
+
 }

@@ -86,7 +86,7 @@
     }
 }
 
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 1080px) {
     #about {
         flex-direction: row;
     }
@@ -184,6 +184,11 @@
     justify-content: space-around;
 }
 
+#resumeDownloadButton a {
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+}
+
 @media only screen and (min-width: 740px) {
     #skillsSlotsCard {
         min-height: 160px;
@@ -212,7 +217,7 @@
     }
 }
 
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 1080px) {
     #skillsSlotsCard {
         min-height: 400px;
         max-width: 300px;

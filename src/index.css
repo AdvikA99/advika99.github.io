@@ -20,32 +20,6 @@ body {
   --content-medium-font-size: 0.9em;
 }
 
-@media only screen and (min-width: 600px) {
-  body {
-    --header-large-font-size: 3em;
-    --header-medium-font-size: 2em;
-    --content-large-font-size: 1.2em;
-    --content-medium-font-size: 1em;
-  }
-}
-
-@media only screen and (min-width: 740px) {
-  body {
-    --section-padding: 32px;
-    --between-section-margin: 32px;
-
-    --card-padding: 32px;
-  }
-}
-
-
-@media only screen and (min-width: 840px) {
-  body {
-    --section-padding: 64px;
-    --between-section-margin: 64px;
-  }
-}
-
 @font-face {
   font-family: "Moon";
   src: local("Moon"),
@@ -136,7 +110,7 @@ button {
 }
 
 .cutoutPiece:hover .header::after {
-  width: 120%;
+  width: 100%;
 }
 
 .cutoutHoleButton {
@@ -166,6 +140,10 @@ button {
   color: white;
 }
 
+.cutoutPieceButton:hover a {
+  color: white !important;
+}
+
 .cutoutPieceButton::before {
   content: "";
   display: flex;
@@ -184,4 +162,35 @@ button {
 
 .cutoutPieceButton > * {
   z-index: 2;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    --header-large-font-size: 3em;
+    --header-medium-font-size: 1.8em;
+    --content-large-font-size: 1.2em;
+    --content-medium-font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  body {
+    --section-padding: 32px;
+    --between-section-margin: 32px;
+
+    --card-padding: 32px;
+  }
+  
+  .cutoutPiece:hover {
+    top: -8px;
+    left: -8px;
+  }
+}
+
+
+@media only screen and (min-width: 840px) {
+  body {
+    --section-padding: 64px;
+    --between-section-margin: 64px;
+  }
 }

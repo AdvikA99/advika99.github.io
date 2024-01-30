@@ -13,6 +13,7 @@
     height: 32px;
     outline: 1px solid white;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .navLink {
